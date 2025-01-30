@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FIRAS\WebForm1.aspx" />
+    <Content Include="OMAR\App_Data\Loginned_User.txt" />
+    <Content Include="OMAR\App_Data\Registered_User.txt" />
+    <Content Include="OMAR\Home_Page.aspx" />
     <Content Include="OMAR\WebForm1.aspx" />
     <Content Include="RAHAF\WebForm1.aspx" />
     <Content Include="SALEH\WebForm1.aspx" />
@@ -82,6 +85,13 @@
     </Compile>
     <Compile Include="FIRAS\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\Home_Page.aspx.cs">
+      <DependentUpon>Home_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\Home_Page.aspx.designer.cs">
+      <DependentUpon>Home_Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
