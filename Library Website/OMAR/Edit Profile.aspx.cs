@@ -149,5 +149,10 @@ namespace Library_Website.OMAR
         {
             Response.Redirect("user_cards.aspx");
         }
+        protected void Password_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Reset Password.aspx");
+        }
+
     }
 }
