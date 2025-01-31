@@ -11,7 +11,7 @@ namespace Library_Website.OMAR
 {
 
 
-    public partial class Home_Page
+    public partial class Contact_Us
     {
 
         /// <summary>

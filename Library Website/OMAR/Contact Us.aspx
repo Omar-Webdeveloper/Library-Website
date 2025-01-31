@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home_Page.aspx.cs" Inherits="Library_Website.OMAR.Home_Page" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact Us.aspx.cs" Inherits="Library_Website.OMAR.Contact_Us" %>
 
 <!DOCTYPE html>
 
