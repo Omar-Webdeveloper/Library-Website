@@ -68,8 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FIRAS\WebForm1.aspx" />
+    <Content Include="OMAR\Admin Dashboard.aspx" />
     <Content Include="OMAR\App_Data\Loginned_User.txt" />
     <Content Include="OMAR\App_Data\Registered_User.txt" />
+    <Content Include="OMAR\App_Data\User_Message_to_Admin.txt" />
     <Content Include="OMAR\Contact Us.aspx" />
     <Content Include="OMAR\Edit Profile.aspx" />
     <Content Include="OMAR\Feedback Reports For Admin.aspx" />
@@ -88,6 +90,13 @@
     </Compile>
     <Compile Include="FIRAS\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\Admin Dashboard.aspx.cs">
+      <DependentUpon>Admin Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\Admin Dashboard.aspx.designer.cs">
+      <DependentUpon>Admin Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\Contact Us.aspx.cs">
       <DependentUpon>Contact Us.aspx</DependentUpon>
