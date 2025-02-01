@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\loginUser.txt" />
+    <Content Include="App_Data\Rooms.txt" />
+    <Content Include="App_Data\RoomsReserv.txt" />
     <Content Include="FIRAS\WebForm1.aspx" />
     <Content Include="OMAR\Admin Dashboard.aspx" />
     <Content Include="OMAR\App_Data\Loginned_User.txt" />
@@ -80,7 +83,10 @@
     <Content Include="RAHAF\WebForm1.aspx" />
     <Content Include="SALEH\WebForm1.aspx" />
     <Content Include="SARA\WebForm1.aspx" />
-    <Content Include="SONDOS\WebForm1.aspx" />
+    <Content Include="SONDOS\roomReserv.aspx" />
+    <Content Include="SONDOS\SerchingForRoom.aspx" />
+    <Content Include="Styles\index.css" />
+    <Content Include="Styles\roomSearch.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -155,12 +161,19 @@
     <Compile Include="SARA\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SONDOS\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SONDOS\roomReserv.aspx.cs">
+      <DependentUpon>roomReserv.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SONDOS\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SONDOS\roomReserv.aspx.designer.cs">
+      <DependentUpon>roomReserv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SONDOS\SerchingForRoom.aspx.cs">
+      <DependentUpon>SerchingForRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SONDOS\SerchingForRoom.aspx.designer.cs">
+      <DependentUpon>SerchingForRoom.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +184,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SONDOS\css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
