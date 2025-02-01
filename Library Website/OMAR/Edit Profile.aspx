@@ -123,7 +123,7 @@
             </div>
             <asp:Button ID="btnSave" runat="server" Text="Save" CssClass="btn btn-primary" OnClick="btnSave_Click" />
             <asp:Button ID="Cards" runat="server" Text="Cards" CssClass="btn btn-secondary" OnClick="Cards_Click" />
-            <asp:Button ID="Changed_Password" runat="server" CssClass="btn btn-secondary" OnClick="Password_Click" />
+            <asp:Button ID="Changed_Password" runat="server" Text="Change My Password" CssClass="btn btn-secondary" OnClick="Password_Click" />
         </div>
     
    </form>
