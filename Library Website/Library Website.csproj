@@ -77,7 +77,12 @@
     <Content Include="OMAR\WebForm1.aspx" />
     <Content Include="RAHAF\WebForm1.aspx" />
     <Content Include="SALEH\WebForm1.aspx" />
-    <Content Include="SARA\WebForm1.aspx" />
+    <Content Include="SARA\adminPage.aspx" />
+    <Content Include="SARA\emailForLogin.txt" />
+    <Content Include="SARA\loginPage.aspx" />
+    <Content Include="SARA\profilePage.aspx" />
+    <Content Include="SARA\regestrationPage.aspx" />
+    <Content Include="SARA\registration.txt" />
     <Content Include="SONDOS\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -139,12 +144,33 @@
     <Compile Include="SALEH\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SARA\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SARA\adminPage.aspx.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SARA\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SARA\adminPage.aspx.designer.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\loginPage.aspx.cs">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\loginPage.aspx.designer.cs">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\profilePage.aspx.cs">
+      <DependentUpon>profilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\profilePage.aspx.designer.cs">
+      <DependentUpon>profilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\regestrationPage.aspx.cs">
+      <DependentUpon>regestrationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\regestrationPage.aspx.designer.cs">
+      <DependentUpon>regestrationPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="SONDOS\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

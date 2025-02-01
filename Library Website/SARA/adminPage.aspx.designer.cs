@@ -11,7 +11,7 @@ namespace Library_Website.SARA
 {
 
 
-    public partial class WebForm1
+    public partial class adminPage
     {
 
         /// <summary>
