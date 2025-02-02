@@ -5,7 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>User Profile</title>
- 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <style>
         body {
@@ -33,6 +32,7 @@
         .profile-container h1 {
             margin-bottom: 1rem;
             color: #333;
+            font-size: 2rem;
         }
 
         .profile-container .form-group {
@@ -46,7 +46,8 @@
 
         .profile-container input[type="text"],
         .profile-container input[type="email"],
-        .profile-container input[type="password"] {
+        .profile-container input[type="password"],
+        .profile-container input[type="number"] {
             width: 100%;
             padding: 0.75rem;
             margin-bottom: 1rem;
@@ -57,7 +58,8 @@
 
         .profile-container input[type="text"]:focus,
         .profile-container input[type="email"]:focus,
-        .profile-container input[type="password"]:focus {
+        .profile-container input[type="password"]:focus,
+        .profile-container input[type="number"]:focus {
             border-color: #0096FF;
             outline: none;
         }
@@ -79,6 +81,10 @@
             background-color: #0071BC;
         }
 
+        .profile-container .img-thumbnail {
+            margin-bottom: 1rem;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -86,6 +92,10 @@
             to {
                 opacity: 1;
             }
+        }
+
+        .btn-secondary {
+            margin-top: 0.5rem;
         }
     </style>
 </head>
@@ -118,19 +128,24 @@
                 </asp:DropDownList>
             </div>
             <div class="form-group">
+                <label for="fuProfileImage">Profile Image</label>
+                <asp:FileUpload ID="fuProfileImage" runat="server" CssClass="form-control-file" />
+                <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-secondary" OnClick="btnUpload_Click" />
+            </div>
+            <div class="form-group">
+                <asp:Image ID="imgProfileImage" runat="server" CssClass="img-thumbnail" Width="150px" Height="150px" />
+            </div>
+            <div class="form-group">
                 <label for="txtCountry">Country</label>
                 <asp:TextBox ID="txtCountry" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
             <asp:Button ID="btnSave" runat="server" Text="Save" CssClass="btn btn-primary" OnClick="btnSave_Click" />
-            <asp:Button ID="Cards" runat="server" Text="Cards" CssClass="btn btn-secondary" OnClick="Cards_Click" />
-            <asp:Button ID="Changed_Password" runat="server" CssClass="btn btn-secondary" OnClick="Password_Click" />
+            <asp:Button ID="Changed_Password" runat="server" Text="Change My Password" CssClass="btn btn-secondary" OnClick="Password_Click" />
         </div>
-    
-   </form>
+    </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
 

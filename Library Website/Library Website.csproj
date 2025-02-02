@@ -74,16 +74,40 @@
     <Content Include="FIRAS\pending.aspx" />
     <Content Include="FIRAS\return.aspx" />
     <Content Include="FIRAS\ShowBooks.aspx" />
+    <Content Include="OMAR\Admin Dashboard.aspx" />
     <Content Include="OMAR\App_Data\Loginned_User.txt" />
+    <Content Include="OMAR\App_Data\ProfileImages\defalut image.jpg" />
+    <Content Include="OMAR\App_Data\ProfileImages\Screenshot 2024-12-06 192357.png" />
     <Content Include="OMAR\App_Data\Registered_User.txt" />
+    <Content Include="OMAR\App_Data\User_Message_to_Admin.txt" />
     <Content Include="OMAR\Contact Us.aspx" />
     <Content Include="OMAR\Edit Profile.aspx" />
     <Content Include="OMAR\Feedback Reports For Admin.aspx" />
+    <Content Include="OMAR\new edit.aspx" />
+    <Content Include="OMAR\New Reset Password.aspx" />
+    <Content Include="OMAR\New_Edit_Profile.aspx" />
     <Content Include="OMAR\Reset Password.aspx" />
     <Content Include="OMAR\WebForm1.aspx" />
     <Content Include="RAHAF\WebForm1.aspx" />
     <Content Include="SALEH\WebForm1.aspx" />
-    <Content Include="SARA\WebForm1.aspx" />
+    <Content Include="SONDOS\roomReserv.aspx" />
+    <Content Include="SONDOS\SerchingForRoom.aspx" />
+    <Content Include="Styles\index.css" />
+    <Content Include="Styles\roomSearch.css" />
+    <Content Include="SARA\adminPage.aspx" />
+    <Content Include="SARA\BookHistory.txt" />
+    <Content Include="SARA\Books.txt" />
+    <Content Include="SARA\emailForLogin.txt" />
+    <Content Include="SARA\Images\logo.png" />
+    <Content Include="SARA\loginPage.aspx" />
+    <Content Include="SARA\editProfile.aspx" />
+    <Content Include="SARA\ProfilePage.aspx" />
+    <Content Include="SARA\regestrationPage.aspx" />
+    <Content Include="SARA\registration.txt" />
+    <Content Include="SARA\ReservationsBook.txt" />
+    <Content Include="SARA\ReservationsRoom.txt" />
+    <Content Include="SARA\RoomHistory.txt" />
+    <Content Include="SARA\Rooms.txt" />
     <Content Include="SONDOS\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -116,6 +140,13 @@
     <Compile Include="FIRAS\ShowBooks.aspx.designer.cs">
       <DependentUpon>ShowBooks.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OMAR\Admin Dashboard.aspx.cs">
+      <DependentUpon>Admin Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\Admin Dashboard.aspx.designer.cs">
+      <DependentUpon>Admin Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OMAR\Contact Us.aspx.cs">
       <DependentUpon>Contact Us.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,6 +167,27 @@
     </Compile>
     <Compile Include="OMAR\Feedback Reports For Admin.aspx.designer.cs">
       <DependentUpon>Feedback Reports For Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\new edit.aspx.cs">
+      <DependentUpon>new edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\new edit.aspx.designer.cs">
+      <DependentUpon>new edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\New Reset Password.aspx.cs">
+      <DependentUpon>New Reset Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\New Reset Password.aspx.designer.cs">
+      <DependentUpon>New Reset Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\New_Edit_Profile.aspx.cs">
+      <DependentUpon>New_Edit_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\New_Edit_Profile.aspx.designer.cs">
+      <DependentUpon>New_Edit_Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\Reset Password.aspx.cs">
       <DependentUpon>Reset Password.aspx</DependentUpon>
@@ -166,19 +218,60 @@
     <Compile Include="SALEH\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SARA\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SARA\adminPage.aspx.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SARA\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SARA\adminPage.aspx.designer.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SONDOS\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SARA\Books.txt.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SONDOS\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="SARA\Books.txt.designer.cs">
+      <DependentUpon>Books.txt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\loginPage.aspx.cs">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\loginPage.aspx.designer.cs">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\editProfile.aspx.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\editProfile.aspx.designer.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\regestrationPage.aspx.cs">
+      <DependentUpon>regestrationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\regestrationPage.aspx.designer.cs">
+      <DependentUpon>regestrationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SONDOS\roomReserv.aspx.cs">
+      <DependentUpon>roomReserv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SONDOS\roomReserv.aspx.designer.cs">
+      <DependentUpon>roomReserv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SONDOS\SerchingForRoom.aspx.cs">
+      <DependentUpon>SerchingForRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SONDOS\SerchingForRoom.aspx.designer.cs">
+      <DependentUpon>SerchingForRoom.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +283,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SONDOS\css\" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

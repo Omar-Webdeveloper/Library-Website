@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
+    <link href="assets/css/roomSearch.css" rel="stylesheet" />
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- ***** Header Area Start ***** -->
+  <div class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s" style="color: azure !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="/assets/images/logo.png" alt="Logo" style="height: 115px;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li ><a href="index.html" style="color: azure;" >Home</a></li>
+              <li ><a href="roomReser.html" class="active"> Room </a></li>
+              <li ><a href="bookReservations.html" style="color: azure;">Book </a></li>
+              <li ><a href="index.html" style="color: azure;">Services</a></li>
+              <li ><a href="index.html" style="color: azure;">About</a></li>
+              <li><a href="index.html" style="color: azure;">Newsletter</a></li>
+              <li><div class="gradient-button" ><a id="modal_trigger" href="#modal">logIn</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- ***** Header Area End ***** -->
+    <div class="s006">
+      <form>
+        <fieldset>
+          <legend>What Kind of Rooms are you looking for?</legend>
+          <div class="inner-form">
+            <div class="input-field">
+                <a class="scroll-to-section" href="#rooms">
+              <button class="btn-search" type="button" >
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg> -->
+              </button></a>
+              <input id="search" type="text" placeholder="" value="" />
+            </div>
+          </div>
+          <div class="suggestion-wrap">
+            <span>Single</span>
+            <span>Double</span>
+            <span>Meeting</span>
+            <span>studying</span>
+          </div>
+          
+        </fieldset>
+      </form>
+    </div>
+
+      <!--Room cards-->
+
+  <div id="services" class="services section" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2"  id="rooms">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Our <em>Rooms category</em> for you</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Need a quiet space for your next meeting or brainstorming session? Our platform offers an easy-to-use booking system for meeting rooms. Reserve a room that fits your needs and enjoy a productive environment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <h4>Single Rooms</h4>
+            <p></p>
+            <div class="text-button"><br>
+              <a href="#">Book Now!! <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <h4>Double Rooms</h4>
+            <p></p>
+            <div class="text-button" ><br>
+              <a href="#">Book Now!! <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <h4>Meeting Rooms</h4>
+            <p>
+              
+            </p><br>
+            <div class="text-button">
+              <a href="#">Book Now!!<i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            
+            <h4>Studing Rooms</h4>
+            <p></p>
+            <div class="text-button"><br>
+              <a href="#">Book Now!! <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Room cards end-->
+
+    <!--footer section-->
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Join our community for book updates, events, and community news!</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <p>BookUnity - RJ, 22795-008, Irbid</p>
+            <p><a href="#">010-020-0340</a></p>
+            <p><a href="#">info@BookUnity.co</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Free Apps</a></li>
+              <li><a href="#">App Engine</a></li>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">App News</a></li>
+            </ul>
+          
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Our Company</h4>
+            <div class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </div>
+            <p>Join our community newsletter to stay updated on new book arrivals, upcoming events, and the latest trends in reading and collaboration!</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2022 Bookunity Company. All Rights Reserved. 
+          <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
