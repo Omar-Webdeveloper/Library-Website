@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact Us.aspx.cs" Inherits="Library_Website.OMAR.Contact_Us" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="New Reset Password.aspx.cs" Inherits="Library_Website.OMAR.New_Reset_Password" %>
 
 <!DOCTYPE html>
 
@@ -183,7 +183,17 @@ footer {
     <!--Navbar End-->
         <div>
             <div class="container my-5">
-              
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <asp:Button class="nav-link active" ID="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Profile</asp:Button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <asp:Button class="nav-link" ID="bookTab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Book Reservations</asp:Button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <asp:Button class="nav-link" ID="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Room Reservations</asp:Button>
+                    </li>
+                </ul>
 
                 <div class="tab-content mt-3" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -193,35 +203,41 @@ footer {
 
                                     <asp:Image ID="Image1" runat="server" ImageUrl="Images/logo.png" AlternateText="My Image" Width="300px" />
                                 </div>
-        <!-- Contact Us Section -->
-        <section class="contact-section">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <div class="form-container">
-                    <asp:Panel ID="ContactFormPanel" runat="server">
-                        <div class="form-group">
-                            <label for="first-name">First Name</label>
-                            <asp:TextBox ID="FirstName" runat="server" CssClass="form-control"  required="required"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label for="last-name">Last Name</label>
-                            <asp:TextBox ID="LastName" runat="server" CssClass="form-control"  required="required"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <asp:TextBox ID="Email" runat="server" CssClass="form-control"  TextMode="Email" required="required"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <asp:TextBox ID="Message" runat="server" CssClass="form-control"  Rows="4" required="required"></asp:TextBox>
-                        </div>
-                        <asp:Button ID="SendButton" runat="server" CssClass="send-button" Text="Send" OnClick="SendButton_Click" />
-                    </asp:Panel>
-                </div>
+                                <div class="card-body">
+                                    
+
+
+
+                                    <h1>Reset Password</h1>
+            <div class="form-group">
+                <label for="txtEmail">Email</label>
+                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
             </div>
-        </section>
-    
-                           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="form-group">
+                <label for="txtOldPassword">Old Password</label>
+                <asp:TextBox ID="txtOldPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+            </div>
+            <div class="form-group">
+                <label for="txtNewPassword">New Password</label>
+                <asp:TextBox ID="txtNewPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+            </div>
+            <div class="form-group">
+                <label for="txtConfirmPassword">Confirm New Password</label>
+                <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+            </div>
+            <asp:Button ID="btnResetPassword" runat="server" Text="Reset Password" CssClass="btn btn-primary" OnClick="btnResetPassword_Click" />
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <h2 class="mb-3">Current Bookings</h2>
                         <asp:Table runat="server" ID="currentBookingsTable">
                             <asp:TableRow>
@@ -287,3 +303,4 @@ footer {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+

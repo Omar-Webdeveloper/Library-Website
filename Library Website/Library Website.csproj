@@ -81,6 +81,7 @@
     <Content Include="OMAR\Edit Profile.aspx" />
     <Content Include="OMAR\Feedback Reports For Admin.aspx" />
     <Content Include="OMAR\new edit.aspx" />
+    <Content Include="OMAR\New Reset Password.aspx" />
     <Content Include="OMAR\New_Edit_Profile.aspx" />
     <Content Include="OMAR\Reset Password.aspx" />
     <Content Include="OMAR\WebForm1.aspx" />
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="OMAR\new edit.aspx.designer.cs">
       <DependentUpon>new edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\New Reset Password.aspx.cs">
+      <DependentUpon>New Reset Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\New Reset Password.aspx.designer.cs">
+      <DependentUpon>New Reset Password.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\New_Edit_Profile.aspx.cs">
       <DependentUpon>New_Edit_Profile.aspx</DependentUpon>
