@@ -20,7 +20,7 @@ namespace Library_Website.SARA
 
         {
 
-            //string file = Server.MapPath("registration.txt");
+            string file = Server.MapPath("registration.txt");
 
             if (email.Text == "admin@gmail.com" && password.Text == "123")
             {

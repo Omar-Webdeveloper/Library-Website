@@ -52,7 +52,7 @@ body::before {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
     width: 100%;
     height: 100px;
     line-height: 100px;
@@ -277,14 +277,11 @@ header {
             <div class="wrapper">
     <nav class="nav">
         <div class="nav-logo">
-            <img src="A_formal_and_elegant_logo_for_a_website_called_BookUnity_The_logo_should_incorporate_the_colors_orange_and_brown_featuring_a_vintage_font_that_evokes_a_sense_of_depth_and_nostalgia_reminiscent_of_the_1960s_The_des.png" height="100px" width="100px"/>
            
+           <asp:Image ID="Image1" runat="server" ImageUrl="Images/logo.png" AlternateText="My Image" Width="125px" height="100px" />
         </div>
         
-        <div class="nav-button">
-            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
-            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-        </div>
+      
         <div class="nav-menu-btn">
             <i class="bx bx-menu" onclick="myMenuFunction()"></i>
         </div>
@@ -297,7 +294,9 @@ header {
 
         <div class="login-container" id="login">
             <div class="top">
-                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                
+
+                <span>Don't have an account?<asp:Label runat="server" style="margin:0; padding:0;"> <a href="regestrationPage.aspx" >Sign Up</a></asp:Label></span>
                 <header>Login</header>
             </div>
 

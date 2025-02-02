@@ -11,26 +11,26 @@ namespace Library_Website.SARA
 {
 
 
-    public partial class loginPage
+    public partial class profilePage
     {
 
         /// <summary>
-        /// form1 control.
+        /// uName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox uName;
 
         /// <summary>
-        /// Image1 control.
+        /// fName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox fName;
 
         /// <summary>
         /// email control.
@@ -51,21 +51,21 @@ namespace Library_Website.SARA
         protected global::System.Web.UI.WebControls.TextBox password;
 
         /// <summary>
-        /// sigIn control.
+        /// tel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sigIn;
+        protected global::System.Web.UI.WebControls.TextBox tel;
 
         /// <summary>
-        /// result control.
+        /// button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label result;
+        protected global::System.Web.UI.WebControls.Button button;
     }
 }

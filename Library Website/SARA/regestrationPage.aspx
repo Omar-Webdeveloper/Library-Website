@@ -233,7 +233,7 @@
                             <asp:Button class="submit" ID="registar" runat="server" Text="Registar" OnClick="registar_Click" />
                         </div>
                         <div class="top">
-                            <span>Have an account? <a href="#">Login</a></span>
+                            <span>Have an account? <asp:Label runat="server" style="margin:0; padding:0;"><a href="loginPage.aspx">Login</a></asp:Label></span>
 
                         </div>
 

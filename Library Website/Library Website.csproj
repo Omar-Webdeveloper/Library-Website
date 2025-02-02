@@ -80,11 +80,20 @@
     <Content Include="RAHAF\WebForm1.aspx" />
     <Content Include="SALEH\WebForm1.aspx" />
     <Content Include="SARA\adminPage.aspx" />
+    <Content Include="SARA\BookHistory.txt" />
+    <Content Include="SARA\Books.txt" />
     <Content Include="SARA\emailForLogin.txt" />
+    <Content Include="SARA\Images\logo.png" />
     <Content Include="SARA\loginPage.aspx" />
-    <Content Include="SARA\profilePage.aspx" />
+    <Content Include="SARA\editProfile.aspx" />
+    <Content Include="SARA\ProfilePage.aspx" />
     <Content Include="SARA\regestrationPage.aspx" />
     <Content Include="SARA\registration.txt" />
+    <Content Include="SARA\profile.aspx" />
+    <Content Include="SARA\ReservationsBook.txt" />
+    <Content Include="SARA\ReservationsRoom.txt" />
+    <Content Include="SARA\RoomHistory.txt" />
+    <Content Include="SARA\Rooms.txt" />
     <Content Include="SONDOS\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -160,6 +169,12 @@
     <Compile Include="SARA\adminPage.aspx.designer.cs">
       <DependentUpon>adminPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SARA\Books.txt.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\Books.txt.designer.cs">
+      <DependentUpon>Books.txt.cs</DependentUpon>
+    </Compile>
     <Compile Include="SARA\loginPage.aspx.cs">
       <DependentUpon>loginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,12 +182,19 @@
     <Compile Include="SARA\loginPage.aspx.designer.cs">
       <DependentUpon>loginPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SARA\profilePage.aspx.cs">
-      <DependentUpon>profilePage.aspx</DependentUpon>
+    <Compile Include="SARA\editProfile.aspx.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SARA\profilePage.aspx.designer.cs">
-      <DependentUpon>profilePage.aspx</DependentUpon>
+    <Compile Include="SARA\editProfile.aspx.designer.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="SARA\regestrationPage.aspx.cs">
       <DependentUpon>regestrationPage.aspx</DependentUpon>
@@ -180,6 +202,13 @@
     </Compile>
     <Compile Include="SARA\regestrationPage.aspx.designer.cs">
       <DependentUpon>regestrationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SARA\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SARA\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="SONDOS\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -198,6 +227,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
