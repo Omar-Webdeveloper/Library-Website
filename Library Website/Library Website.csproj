@@ -67,7 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FIRAS\WebForm1.aspx" />
+    <Content Include="FIRAS\AddBook.aspx" />
+    <Content Include="FIRAS\Files\BookHistory.txt" />
+    <Content Include="FIRAS\Files\Books.txt" />
+    <Content Include="FIRAS\Files\ReservationsBook.txt" />
+    <Content Include="FIRAS\pending.aspx" />
+    <Content Include="FIRAS\return.aspx" />
+    <Content Include="FIRAS\ShowBooks.aspx" />
     <Content Include="OMAR\App_Data\Loginned_User.txt" />
     <Content Include="OMAR\App_Data\Registered_User.txt" />
     <Content Include="OMAR\Contact Us.aspx" />
@@ -82,12 +88,33 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FIRAS\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="FIRAS\AddBook.aspx.cs">
+      <DependentUpon>AddBook.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FIRAS\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="FIRAS\AddBook.aspx.designer.cs">
+      <DependentUpon>AddBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FIRAS\pending.aspx.cs">
+      <DependentUpon>pending.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FIRAS\pending.aspx.designer.cs">
+      <DependentUpon>pending.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FIRAS\return.aspx.cs">
+      <DependentUpon>return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FIRAS\return.aspx.designer.cs">
+      <DependentUpon>return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FIRAS\ShowBooks.aspx.cs">
+      <DependentUpon>ShowBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FIRAS\ShowBooks.aspx.designer.cs">
+      <DependentUpon>ShowBooks.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\Contact Us.aspx.cs">
       <DependentUpon>Contact Us.aspx</DependentUpon>
