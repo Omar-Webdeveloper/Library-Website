@@ -73,11 +73,14 @@
     <Content Include="FIRAS\WebForm1.aspx" />
     <Content Include="OMAR\Admin Dashboard.aspx" />
     <Content Include="OMAR\App_Data\Loginned_User.txt" />
+    <Content Include="OMAR\App_Data\ProfileImages\defalut image.jpg" />
+    <Content Include="OMAR\App_Data\ProfileImages\Screenshot 2024-12-06 192357.png" />
     <Content Include="OMAR\App_Data\Registered_User.txt" />
     <Content Include="OMAR\App_Data\User_Message_to_Admin.txt" />
     <Content Include="OMAR\Contact Us.aspx" />
     <Content Include="OMAR\Edit Profile.aspx" />
     <Content Include="OMAR\Feedback Reports For Admin.aspx" />
+    <Content Include="OMAR\new edit.aspx" />
     <Content Include="OMAR\Reset Password.aspx" />
     <Content Include="OMAR\WebForm1.aspx" />
     <Content Include="RAHAF\WebForm1.aspx" />
@@ -124,6 +127,13 @@
     </Compile>
     <Compile Include="OMAR\Feedback Reports For Admin.aspx.designer.cs">
       <DependentUpon>Feedback Reports For Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\new edit.aspx.cs">
+      <DependentUpon>new edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\new edit.aspx.designer.cs">
+      <DependentUpon>new edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\Reset Password.aspx.cs">
       <DependentUpon>Reset Password.aspx</DependentUpon>

@@ -72,13 +72,13 @@ namespace Library_Website.OMAR
             try
             {
                 MailMessage mail = new MailMessage();
-                mail.From = new MailAddress("omarabojolban9@gmail.com"); // Admin's email address
+                mail.From = new MailAddress("omarabojolban@gmail.com"); // Admin's email address
                 mail.To.Add(recipientEmail); // The recipient's email address
                 mail.Subject = "Reply to Your Message";
                 mail.Body = replyMessage;
 
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
-                smtpClient.Credentials = new System.Net.NetworkCredential("omarabojolban9@gmail.com", "your-email-password");
+                smtpClient.Credentials = new System.Net.NetworkCredential("omarabojolban9@gmail.com", "OMar@@1212");
                 smtpClient.EnableSsl = true;
                 smtpClient.Send(mail);
 
