@@ -85,7 +85,6 @@
     <Content Include="OMAR\WebForm1.aspx" />
     <Content Include="RAHAF\WebForm1.aspx" />
     <Content Include="SALEH\WebForm1.aspx" />
-    <Content Include="SARA\WebForm1.aspx" />
     <Content Include="SONDOS\roomReserv.aspx" />
     <Content Include="SONDOS\SerchingForRoom.aspx" />
     <Content Include="Styles\index.css" />
@@ -100,7 +99,6 @@
     <Content Include="SARA\ProfilePage.aspx" />
     <Content Include="SARA\regestrationPage.aspx" />
     <Content Include="SARA\registration.txt" />
-    <Content Include="SARA\profile.aspx" />
     <Content Include="SARA\ReservationsBook.txt" />
     <Content Include="SARA\ReservationsRoom.txt" />
     <Content Include="SARA\RoomHistory.txt" />
@@ -220,13 +218,6 @@
     </Compile>
     <Compile Include="SARA\regestrationPage.aspx.designer.cs">
       <DependentUpon>regestrationPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SARA\profile.aspx.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SARA\profile.aspx.designer.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="SONDOS\roomReserv.aspx.cs">
       <DependentUpon>roomReserv.aspx</DependentUpon>
