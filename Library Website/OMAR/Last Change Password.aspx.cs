@@ -12,7 +12,7 @@ namespace Library_Website.OMAR
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // No need to read email from the login file, user will input it manually
         }
 
         protected void ChangePasswordButton_Click(object sender, EventArgs e)
@@ -25,9 +25,12 @@ namespace Library_Website.OMAR
             if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(oldPassword) &&
                 !string.IsNullOrEmpty(newPassword) && !string.IsNullOrEmpty(confirmPassword))
             {
+                // Check if new password and confirm password match
                 if (newPassword == confirmPassword)
                 {
+                    // Call method to change password
                     bool isPasswordChanged = ChangePassword(email, oldPassword, newPassword);
+
                     if (isPasswordChanged)
                     {
                         // Display success message
@@ -35,21 +38,29 @@ namespace Library_Website.OMAR
                     }
                     else
                     {
-                        // Display error message
-                        Response.Write("<script>alert('Error changing password');</script>");
+                        // Display error message if old password doesn't match or email is incorrect
+                        Response.Write("<script>alert('Error: Incorrect email or old password');</script>");
                     }
                 }
                 else
                 {
-                    // Display error message
-                    Response.Write("<script>alert('New passwords do not match');</script>");
+                    // Display error message if new passwords do not match
+                    Response.Write("<script>alert('Error: New passwords do not match');</script>");
                 }
+            }
+            else
+            {
+                // Display error message if any field is empty
+                Response.Write("<script>alert('Error: Please fill in all fields');</script>");
             }
         }
 
         private bool ChangePassword(string email, string oldPassword, string newPassword)
         {
+            // Path to the register file (this file contains the registered users)
             string registerFilePath = Server.MapPath("~/OMAR/App_Data/Rigster.txt");
+
+            // Read all lines from the register file
             string[] lines = File.ReadAllLines(registerFilePath);
             List<string> updatedLines = new List<string>();
             bool passwordChanged = false;
@@ -57,17 +68,26 @@ namespace Library_Website.OMAR
             foreach (string line in lines)
             {
                 string[] parts = line.Split(',');
-                if (parts.Length == 6 && parts[3].Trim() == email && parts[4].Trim() == oldPassword)
+
+                // Ensure the line has the expected format (at least 6 parts)
+                if (parts.Length == 6)
                 {
-                    updatedLines.Add($"{parts[0]},{parts[1]},{parts[2]},{parts[3]},{newPassword},{parts[5]}");
-                    passwordChanged = true;
-                }
-                else
-                {
-                    updatedLines.Add(line);
+                    // Check if the email and old password match
+                    if (parts[3].Trim() == email && parts[4].Trim() == oldPassword)
+                    {
+                        // Update the password to the new password
+                        updatedLines.Add($"{parts[0]},{parts[1]},{parts[2]},{parts[3]},{newPassword},{parts[5]}");
+                        passwordChanged = true;
+                    }
+                    else
+                    {
+                        // Add unchanged line to the list
+                        updatedLines.Add(line);
+                    }
                 }
             }
 
+            // If password was changed, write updated data back to the file
             if (passwordChanged)
             {
                 File.WriteAllLines(registerFilePath, updatedLines);
