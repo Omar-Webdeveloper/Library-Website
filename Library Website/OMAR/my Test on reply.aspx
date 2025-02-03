@@ -236,7 +236,11 @@ footer {
 
 
 
-
+</div></div>
+                    </div>
+                </div>
+            </div>
+    
              <footer>
     <div class="justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
         <div class="col-12">

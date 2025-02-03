@@ -14,37 +14,73 @@ namespace Library_Website.OMAR
             if (!IsPostBack)
             {
                 List<UserReview> userReviews = ReadUserReviewsFromFile();
-                ReviewsRepeater.DataSource = userReviews.FindAll(review => review.Status == "accepted");
-                ReviewsRepeater.DataBind();
+                if (userReviews != null && userReviews.Count > 0)
+                {
+                    ReviewsRepeater.DataSource = userReviews.FindAll(review => review.Status == "accepted");
+                    ReviewsRepeater.DataBind();
+                }
+                else
+                {
+                    // Handle the case where no reviews are available
+                    // Optionally display a message to the user
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('No accepted reviews available.');", true);
+                }
             }
         }
 
         protected void SubmitReviewButton_Click(object sender, EventArgs e)
         {
-            string firstName = FirstNameTextBox.Text.Trim();
-            string lastName = LastNameTextBox.Text.Trim();
             string email = EmailTextBox.Text.Trim();
-            string messageContent = MessageTextBox.Text.Trim();
-            string status = StatusTextBox.Text.Trim();
+            string password = PasswordTextBox.Text.Trim();
 
-            if (!string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName) &&
-                !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(messageContent) &&
-                !string.IsNullOrEmpty(status))
+            if (IsValidUser(email, password))
             {
-                string review = $"First Name: {firstName}\r\nLast Name: {lastName}\r\nEmail: {email}\r\nMessage: {messageContent}\r\nStatus: {status}\r\n-----\r\n";
-                File.AppendAllText(Server.MapPath("~/OMAR/App_Data/User_Message_to_Admin.txt"), review);
+                string firstName = FirstNameTextBox.Text.Trim();
+                string lastName = LastNameTextBox.Text.Trim();
+                string messageContent = MessageTextBox.Text.Trim();
 
-                List<UserReview> userReviews = ReadUserReviewsFromFile();
-                //ReviewsRepeater.DataSource = userReviews.FindAll(review => review.Status == "accepted");
-                ReviewsRepeater.DataBind();
+                if (!string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName) &&
+                    !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(messageContent))
+                {
+                    string review = $"First Name: {firstName}\r\nLast Name: {lastName}\r\nEmail: {email}\r\nMessage: {messageContent}\r\nStatus: pending\r\n-----\r\n";
+                    File.AppendAllText(Server.MapPath("~/OMAR/App_Data/User_Message_to_Admin.txt"), review);
 
-                // Clear the form fields
-                FirstNameTextBox.Text = string.Empty;
-                LastNameTextBox.Text = string.Empty;
-                EmailTextBox.Text = string.Empty;
-                MessageTextBox.Text = string.Empty;
-                StatusTextBox.Text = string.Empty;
+                    List<UserReview> userReviews = ReadUserReviewsFromFile();
+                    if (userReviews != null && userReviews.Count > 0)
+                    {
+                        ReviewsRepeater.DataSource = userReviews.FindAll(r => r.Status == "accepted");
+                        ReviewsRepeater.DataBind();
+                    }
+
+                    // Clear the form fields
+                    EmailTextBox.Text = string.Empty;
+                    PasswordTextBox.Text = string.Empty;
+                    FirstNameTextBox.Text = string.Empty;
+                    LastNameTextBox.Text = string.Empty;
+                    MessageTextBox.Text = string.Empty;
+                }
             }
+            else
+            {
+                // Display an error message
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Invalid email or password.');", true);
+            }
+        }
+
+        private bool IsValidUser(string email, string password)
+        {
+            string registerFilePath = Server.MapPath("~/OMAR/App_Data/Rigster.txt");
+            string[] lines = File.ReadAllLines(registerFilePath);
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(',');
+                if (parts.Length == 6 && parts[3].Trim() == email && parts[4].Trim() == password)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private List<UserReview> ReadUserReviewsFromFile()

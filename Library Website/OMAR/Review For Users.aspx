@@ -38,13 +38,20 @@
                         <p><strong>Name:</strong> <%# Eval("FirstName") %> <%# Eval("LastName") %></p>
                         <p><strong>Email:</strong> <%# Eval("Email") %></p>
                         <p><strong>Message:</strong> <%# Eval("MessageContent") %></p>
-                        <p><strong>Status:</strong> <%# Eval("Status") %></p>
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
 
             <div class="form-container">
                 <h3>Submit a Review</h3>
+                <div class="form-group">
+                    <label for="EmailTextBox">Email:</label>
+                    <asp:TextBox ID="EmailTextBox" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <label for="PasswordTextBox">Password:</label>
+                    <asp:TextBox ID="PasswordTextBox" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                </div>
                 <div class="form-group">
                     <label for="FirstNameTextBox">First Name:</label>
                     <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
@@ -54,16 +61,8 @@
                     <asp:TextBox ID="LastNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <label for="EmailTextBox">Email:</label>
-                    <asp:TextBox ID="EmailTextBox" runat="server" CssClass="form-control"></asp:TextBox>
-                </div>
-                <div class="form-group">
                     <label for="MessageTextBox">Message:</label>
                     <asp:TextBox ID="MessageTextBox" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                </div>
-                <div class="form-group">
-                    <label for="StatusTextBox">Status:</label>
-                    <asp:TextBox ID="StatusTextBox" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
                 <asp:Button ID="SubmitReviewButton" runat="server" Text="Submit Review" OnClick="SubmitReviewButton_Click" CssClass="btn btn-primary" />
             </div>

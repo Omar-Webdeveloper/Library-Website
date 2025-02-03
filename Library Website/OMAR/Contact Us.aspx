@@ -259,9 +259,9 @@ footer {
 
 </head>
 <body>
-    <form id="form1" runat="server" action="https://api.web3forms.com/submit" method="POST" >
-
-            <input type="hidden" name="access_key" value="41e28286-dfaf-471d-aeb3-8f6fc562a4d7">
+    <form id="form1" runat="server" >
+<%--         action="https://api.web3forms.com/submit" method="POST"--%>
+<%--            <input type="hidden" name="access_key" value="41e28286-dfaf-471d-aeb3-8f6fc562a4d7">--%>
 
                     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg sticky-top">

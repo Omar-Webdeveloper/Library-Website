@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="last edit profile.aspx.cs" Inherits="Library_Website.OMAR.last_edit_profile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="Library_Website.OMAR.WebForm2" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Edit Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -216,7 +216,7 @@
             </div>
 
             <div class="form-group">
-                <label for="LastNameTextBox">User Name:</label>
+                <label for="LastNameTextBox">Last Name:</label>
                 <asp:TextBox ID="LastNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
 
@@ -236,15 +236,14 @@
             </div>
 
             <div class="form-group">
-                <label for="ProfileImagePathTextBox">Profile Image Path:</label>
-                <asp:TextBox ID="ProfileImagePathTextBox" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:Image Width="100" runat="server" ID="ProImg"/>
             </div>
 
             <div class="form-group">
                 <label for="FileUpload1">Profile Image:</label>
                 <div style="display: flex; flex-direction: row;">
-                    <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control-file" />
-                    <asp:Button ID="Button1" runat="server" Text="Upload" CssClass="btn btn-secondary" />
+                    <asp:FileUpload ID="FileUpload2" runat="server" CssClass="form-control-file" />
+<%--                    <asp:Button ID="Button1" runat="server" Text="Upload" CssClass="btn btn-secondary" />--%>
                 </div>
             </div>
 
