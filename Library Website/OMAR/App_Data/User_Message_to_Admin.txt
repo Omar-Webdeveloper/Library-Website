@@ -1,30 +1,60 @@
-﻿First Name: 21
-Last Name: Jolban
-Email: omarabojolban9@gmail.com
-Message: drererer
+﻿First Name: John
+Last Name: Doe
+Email: johndoe@example.com
+Message: Great service and support!
+Status: accepted
 -----
-First Name: 21
-Last Name: Jolban
-Email: omarabojolban9@gmail.com
-Message: drererer
+First Name: Jane
+Last Name: Smith
+Email: janesmith@example.com
+Message: I have an issue with my account.
+Status: pending
 -----
-First Name: 21
-Last Name: Jolban
-Email: omarabojolban9@gmail.com
-Message: drererer
+First Name: Bob
+Last Name: Johnson
+Email: bobjohnson@example.com
+Message: Not satisfied with the product quality.
+Status: rejected
 -----
-First Name: 21
-Last Name: Jolban
-Email: omarabojolban9@gmail.com
-Message: drererer
+First Name: Alice
+Last Name: Brown
+Email: alicebrown@example.com
+Message: Excellent user experience on the website.
+Status: accepted
 -----
-First Name: 21
-Last Name: Jolban
-Email: omarabojolban9@gmail.com
-Message: nnn
+First Name: Tom
+Last Name: White
+Email: tomwhite@example.com
+Message: Need help with password reset.
+Status: pending
 -----
-First Name: 21
-Last Name: Jolban
-Email: omarabojolban9@gmail.com
-Message: heloo you are good
+First Name: Emma
+Last Name: Green
+Email: emmagreen@example.com
+Message: Received a damaged item.
+Status: rejected
+-----
+First Name: Steve
+Last Name: Black
+Email: steveblack@example.com
+Message: Fantastic customer support!
+Status: accepted
+-----
+First Name: Rachel
+Last Name: Blue
+Email: rachelblue@example.com
+Message: Delivery was delayed.
+Status: pending
+-----
+First Name: Mike
+Last Name: Silver
+Email: mikesilver@example.com
+Message: Very happy with my purchase.
+Status: accepted
+-----
+First Name: Lisa
+Last Name: Gold
+Email: lisagold@example.com
+Message: Request for a refund.
+Status: rejected
 -----

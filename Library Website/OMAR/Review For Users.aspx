@@ -38,6 +38,7 @@
                         <p><strong>Name:</strong> <%# Eval("FirstName") %> <%# Eval("LastName") %></p>
                         <p><strong>Email:</strong> <%# Eval("Email") %></p>
                         <p><strong>Message:</strong> <%# Eval("MessageContent") %></p>
+                        <p><strong>Status:</strong> <%# Eval("Status") %></p>
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
@@ -59,6 +60,10 @@
                 <div class="form-group">
                     <label for="MessageTextBox">Message:</label>
                     <asp:TextBox ID="MessageTextBox" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <label for="StatusTextBox">Status:</label>
+                    <asp:TextBox ID="StatusTextBox" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
                 <asp:Button ID="SubmitReviewButton" runat="server" Text="Submit Review" OnClick="SubmitReviewButton_Click" CssClass="btn btn-primary" />
             </div>

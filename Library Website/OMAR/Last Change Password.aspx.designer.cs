@@ -11,7 +11,7 @@ namespace Library_Website.OMAR
 {
 
 
-    public partial class Review_For_Users
+    public partial class Last_Change_Password
     {
 
         /// <summary>
@@ -24,33 +24,6 @@ namespace Library_Website.OMAR
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// ReviewsRepeater control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ReviewsRepeater;
-
-        /// <summary>
-        /// FirstNameTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FirstNameTextBox;
-
-        /// <summary>
-        /// LastNameTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
-
-        /// <summary>
         /// EmailTextBox control.
         /// </summary>
         /// <remarks>
@@ -60,30 +33,39 @@ namespace Library_Website.OMAR
         protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
 
         /// <summary>
-        /// MessageTextBox control.
+        /// OldPasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MessageTextBox;
+        protected global::System.Web.UI.WebControls.TextBox OldPasswordTextBox;
 
         /// <summary>
-        /// StatusTextBox control.
+        /// NewPasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StatusTextBox;
+        protected global::System.Web.UI.WebControls.TextBox NewPasswordTextBox;
 
         /// <summary>
-        /// SubmitReviewButton control.
+        /// ConfirmPasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubmitReviewButton;
+        protected global::System.Web.UI.WebControls.TextBox ConfirmPasswordTextBox;
+
+        /// <summary>
+        /// ChangePasswordButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ChangePasswordButton;
     }
 }

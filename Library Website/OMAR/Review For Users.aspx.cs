@@ -14,7 +14,7 @@ namespace Library_Website.OMAR
             if (!IsPostBack)
             {
                 List<UserReview> userReviews = ReadUserReviewsFromFile();
-                ReviewsRepeater.DataSource = userReviews;
+                ReviewsRepeater.DataSource = userReviews.FindAll(review => review.Status == "accepted");
                 ReviewsRepeater.DataBind();
             }
         }
@@ -25,15 +25,17 @@ namespace Library_Website.OMAR
             string lastName = LastNameTextBox.Text.Trim();
             string email = EmailTextBox.Text.Trim();
             string messageContent = MessageTextBox.Text.Trim();
+            string status = StatusTextBox.Text.Trim();
 
             if (!string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName) &&
-                !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(messageContent))
+                !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(messageContent) &&
+                !string.IsNullOrEmpty(status))
             {
-                string review = $"First Name: {firstName}\r\nLast Name: {lastName}\r\nEmail: {email}\r\nMessage: {messageContent}\r\n-----\r\n";
+                string review = $"First Name: {firstName}\r\nLast Name: {lastName}\r\nEmail: {email}\r\nMessage: {messageContent}\r\nStatus: {status}\r\n-----\r\n";
                 File.AppendAllText(Server.MapPath("~/OMAR/App_Data/User_Message_to_Admin.txt"), review);
 
                 List<UserReview> userReviews = ReadUserReviewsFromFile();
-                ReviewsRepeater.DataSource = userReviews;
+                //ReviewsRepeater.DataSource = userReviews.FindAll(review => review.Status == "accepted");
                 ReviewsRepeater.DataBind();
 
                 // Clear the form fields
@@ -41,6 +43,7 @@ namespace Library_Website.OMAR
                 LastNameTextBox.Text = string.Empty;
                 EmailTextBox.Text = string.Empty;
                 MessageTextBox.Text = string.Empty;
+                StatusTextBox.Text = string.Empty;
             }
         }
 
@@ -73,6 +76,10 @@ namespace Library_Website.OMAR
                 {
                     userReview.MessageContent = line.Substring(8).Trim();
                 }
+                else if (line.StartsWith("Status:"))
+                {
+                    userReview.Status = line.Substring(7).Trim();
+                }
                 else if (line == "-----")
                 {
                     if (userReview != null)
@@ -98,5 +105,6 @@ namespace Library_Website.OMAR
         public string LastName { get; set; }
         public string Email { get; set; }
         public string MessageContent { get; set; }
+        public string Status { get; set; }
     }
 }

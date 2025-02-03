@@ -75,14 +75,18 @@
     <Content Include="FIRAS\return.aspx" />
     <Content Include="FIRAS\ShowBooks.aspx" />
     <Content Include="OMAR\Admin Dashboard.aspx" />
+    <Content Include="OMAR\App_Data\login.txt" />
     <Content Include="OMAR\App_Data\Loginned_User.txt" />
     <Content Include="OMAR\App_Data\ProfileImages\defalut image.jpg" />
     <Content Include="OMAR\App_Data\ProfileImages\Screenshot 2024-12-06 192357.png" />
     <Content Include="OMAR\App_Data\Registered_User.txt" />
+    <Content Include="OMAR\App_Data\Rigster.txt" />
     <Content Include="OMAR\App_Data\User_Message_to_Admin.txt" />
     <Content Include="OMAR\Contact Us.aspx" />
     <Content Include="OMAR\Edit Profile.aspx" />
     <Content Include="OMAR\Feedback Reports For Admin.aspx" />
+    <Content Include="OMAR\Last Change Password.aspx" />
+    <Content Include="OMAR\last edit profile.aspx" />
     <Content Include="OMAR\my Test on reply.aspx" />
     <Content Include="OMAR\new edit.aspx" />
     <Content Include="OMAR\New Reset Password.aspx" />
@@ -169,6 +173,20 @@
     </Compile>
     <Compile Include="OMAR\Feedback Reports For Admin.aspx.designer.cs">
       <DependentUpon>Feedback Reports For Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\Last Change Password.aspx.cs">
+      <DependentUpon>Last Change Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\Last Change Password.aspx.designer.cs">
+      <DependentUpon>Last Change Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\last edit profile.aspx.cs">
+      <DependentUpon>last edit profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\last edit profile.aspx.designer.cs">
+      <DependentUpon>last edit profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\my Test on reply.aspx.cs">
       <DependentUpon>my Test on reply.aspx</DependentUpon>

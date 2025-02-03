@@ -11,7 +11,7 @@ namespace Library_Website.OMAR
 {
 
 
-    public partial class Review_For_Users
+    public partial class last_edit_profile
     {
 
         /// <summary>
@@ -22,15 +22,6 @@ namespace Library_Website.OMAR
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// ReviewsRepeater control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ReviewsRepeater;
 
         /// <summary>
         /// FirstNameTextBox control.
@@ -51,6 +42,15 @@ namespace Library_Website.OMAR
         protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
 
         /// <summary>
+        /// PhoneNumberTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PhoneNumberTextBox;
+
+        /// <summary>
         /// EmailTextBox control.
         /// </summary>
         /// <remarks>
@@ -60,30 +60,30 @@ namespace Library_Website.OMAR
         protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
 
         /// <summary>
-        /// MessageTextBox control.
+        /// PasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MessageTextBox;
+        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
 
         /// <summary>
-        /// StatusTextBox control.
+        /// ProfileImagePathTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StatusTextBox;
+        protected global::System.Web.UI.WebControls.TextBox ProfileImagePathTextBox;
 
         /// <summary>
-        /// SubmitReviewButton control.
+        /// SaveButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubmitReviewButton;
+        protected global::System.Web.UI.WebControls.Button SaveButton;
     }
 }
