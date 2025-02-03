@@ -327,69 +327,57 @@ footer {
             </div>
         </section>
     
-                           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <h2 class="mb-3">Current Bookings</h2>
-                        <asp:Table runat="server" ID="currentBookingsTable">
-                            <asp:TableRow>
-                                <asp:TableHeaderCell>Book Name</asp:TableHeaderCell>
-                                <asp:TableHeaderCell>Borrow Date</asp:TableHeaderCell>
-                                <asp:TableHeaderCell>Status</asp:TableHeaderCell>
-                            </asp:TableRow>
-                        </asp:Table>
-
-                        <h2 class="mb-3">Previous Bookings</h2>
-                        <asp:Table runat="server" ID="previousBookingsTable">
-                            <asp:TableRow>
-                                <asp:TableHeaderCell>Book Name</asp:TableHeaderCell>
-                                <asp:TableHeaderCell>Borrow Date</asp:TableHeaderCell>
-                                <asp:TableHeaderCell>Return Date</asp:TableHeaderCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </div>
-
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <h2 class="mb-3">Current Reservations</h2>
-                        <asp:Table runat="server" ID="currentRooms">
-                            <asp:TableRow>
-                                <asp:TableHeaderCell>Room Type</asp:TableHeaderCell>
-                                <asp:TableHeaderCell>Reservations Date</asp:TableHeaderCell>
-                                <asp:TableHeaderCell>Status</asp:TableHeaderCell>
-                            </asp:TableRow>
-                        </asp:Table>
-
-                        <h2 class="mb-3">Previous Reservations</h2>
-                        <asp:Table runat="server" ID="previousRooms">
-                            <asp:TableRow>
-                                <asp:TableHeaderCell>Room Type</asp:TableHeaderCell>
-                                <asp:TableHeaderCell>Reservations Date</asp:TableHeaderCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </div>
+                           
                 </div>
             </div>
         </div>
-                   
-             <footer>
-        <div class="justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
-            <div class="col-12">
-                 <div class="row row-2">
-                     <div class="col-sm-3 text-md-center"><img src="../SARA/Images/logo.png" width="30%"></div>
-                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Home</a></li><li class="nav-item"><a class="nav-link" href="#">Services</a></li></ul></div>
-                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Contact Us</a></li><li class="nav-item"><a class="nav-link" href="#">About Us</a></li><li class="nav-item" ><a class="nav-link" href="#">Location</a></li></ul></div>
-                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 ">Have Any Question?</li><li>
-                         <i class="fa-regular fa-envelope" style="font-size: 1rem; margin-right: 2%;"></i>bookunity@email.com</li><li><i class="fa-solid fa-phone" style="font-size: 1rem; margin-right: 2%;"></i>+962-000000000</li></ul></div>
-                 </div>  
-            </div>
-        </div>
-        <div class=" justify-content-center mt-0 pt-0 row-1 mb-0 pb-0 px-sm-3 px-2">
-             <div class="col-12">
-                 <div class="row row-1 no-gutters">
-                     <div class="col-sm-3 col-auto text-center"><small>&#9400; BookUnity 2025</small></div><div class="col-md-3 col-auto "></div><div class="col-md-3 col-auto"></div>
-                     <div class="col  my-auto text-md-left text-right "> <small> Follow Us <span><i class="fa-brands fa-instagram"></i></span> <span><i class="fa-brands fa-square-facebook"></i></span><span><i class="fa-brands fa-whatsapp"></i></span></small>  </div> 
-                 </div>
-             </div>
-         </div>
-     </footer>
+                    </div>
+                                    </div>
+                                </div>
+
+
+              <footer>
+                <div class="justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
+                    <div class="col-12">
+                        <div class="row row-2">
+                            <div class="col-sm-3 text-md-center">
+                                <img src="../SARA/Images/logo.png" width="30%">
+                            </div>
+                            <div class="col-sm-3  my-sm-0 mt-5">
+                                <ul class="list-unstyled">
+                                    <li class="mt-0 nav-item"><a class="nav-link" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3  my-sm-0 mt-5">
+                                <ul class="list-unstyled">
+                                    <li class="mt-0 nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3  my-sm-0 mt-5">
+                                <ul class="list-unstyled">
+                                    <li class="mt-0 ">Have Any Question?</li>
+                                    <li>
+                                        <i class="fa-regular fa-envelope" style="font-size: 1rem; margin-right: 2%;"></i>bookunity@email.com</li>
+                                    <li><i class="fa-solid fa-phone" style="font-size: 1rem; margin-right: 2%;"></i>+962-000000000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" justify-content-center mt-0 pt-0 row-1 mb-0 pb-0 px-sm-3 px-2">
+                    <div class="col-12">
+                        <div class="row row-1 no-gutters">
+                            <div class="col-sm-3 col-auto text-center"><small>&#9400; BookUnity 2025</small></div>
+                            <div class="col-md-3 col-auto "></div>
+                            <div class="col-md-3 col-auto"></div>
+                            <div class="col  my-auto text-md-left text-right "><small>Follow Us <span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-square-facebook"></i></span><span><i class="fa-brands fa-whatsapp"></i></span></small></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

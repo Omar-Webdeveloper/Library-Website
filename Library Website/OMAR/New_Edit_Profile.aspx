@@ -353,6 +353,17 @@ footer {
 <%-- here add the edit profile --%>
                                 <div class="profile-container">
     <h1>User Profile</h1>
+                                     <div class="form-group" style="
+    text-align: center;
+">
+     <asp:Image ID="imgProfileImage" runat="server" CssClass="img-thumbnail" Width="150px" Height="150px" />
+ </div>
+ <div class="form-group">
+     <label for="fuProfileImage">Profile Image</label>
+     <asp:FileUpload ID="fuProfileImage" runat="server" CssClass="form-control-file" />
+     <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-secondary" OnClick="btnUpload_Click" />
+ </div>
+
     <div class="form-group">
         <label for="txtEmail">Email</label>
         <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email" ReadOnly="True"></asp:TextBox>
@@ -377,14 +388,7 @@ footer {
             <asp:ListItem Value="Other">Other</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group">
-        <label for="fuProfileImage">Profile Image</label>
-        <asp:FileUpload ID="fuProfileImage" runat="server" CssClass="form-control-file" />
-        <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-secondary" OnClick="btnUpload_Click" />
-    </div>
-    <div class="form-group">
-        <asp:Image ID="imgProfileImage" runat="server" CssClass="img-thumbnail" Width="150px" Height="150px" />
-    </div>
+   
     <div class="form-group">
         <label for="txtCountry">Country</label>
         <asp:TextBox ID="txtCountry" runat="server" CssClass="form-control"></asp:TextBox>
