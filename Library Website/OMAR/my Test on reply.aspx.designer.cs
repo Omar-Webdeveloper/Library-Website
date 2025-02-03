@@ -11,7 +11,7 @@ namespace Library_Website.OMAR
 {
 
 
-    public partial class WebForm1
+    public partial class my_Test_on_reply
     {
 
         /// <summary>

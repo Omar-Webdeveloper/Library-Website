@@ -83,6 +83,7 @@
     <Content Include="OMAR\Contact Us.aspx" />
     <Content Include="OMAR\Edit Profile.aspx" />
     <Content Include="OMAR\Feedback Reports For Admin.aspx" />
+    <Content Include="OMAR\my Test on reply.aspx" />
     <Content Include="OMAR\new edit.aspx" />
     <Content Include="OMAR\New Reset Password.aspx" />
     <Content Include="OMAR\New_Edit_Profile.aspx" />
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="OMAR\Feedback Reports For Admin.aspx.designer.cs">
       <DependentUpon>Feedback Reports For Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OMAR\my Test on reply.aspx.cs">
+      <DependentUpon>my Test on reply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OMAR\my Test on reply.aspx.designer.cs">
+      <DependentUpon>my Test on reply.aspx</DependentUpon>
     </Compile>
     <Compile Include="OMAR\new edit.aspx.cs">
       <DependentUpon>new edit.aspx</DependentUpon>

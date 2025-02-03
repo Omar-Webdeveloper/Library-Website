@@ -1,6 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Library_Website.OMAR.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="my Test on reply.aspx.cs" Inherits="Library_Website.OMAR.my_Test_on_reply" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -193,7 +194,7 @@ footer {
                                 </div>
 
     
-        <div class="container my-5">
+   <%--     <div class="container my-5">
             <div class="form-container">
                 <h2 class="page-title">User Messages</h2>
 
@@ -211,7 +212,29 @@ footer {
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
-        </div>
+        </div>--%>
+
+<div class="container my-5">
+    <div class="form-container">
+        <h2 class="page-title">User Messages</h2>
+        <asp:Repeater ID="MessagesRepeater" runat="server">
+            <ItemTemplate>
+                <div class="message-container">
+                    <p><strong>Email:</strong> <%# Eval("Email") %></p>
+                    <p><strong>Name:</strong> <%# Eval("FirstName") %> <%# Eval("LastName") %></p>
+                    <p><strong>Message:</strong> <%# Eval("MessageContent") %></p>
+                    <div class="reply-container">
+                        <asp:TextBox ID="ReplyTextBox" runat="server" CssClass="form-control" Rows="3" TextMode="MultiLine" placeholder="Your reply..."></asp:TextBox>
+                        <asp:Button ID="ReplyButton" runat="server" Text="Reply" OnClick="ReplyButton_Click" CommandArgument='<%# Eval("Email") %>' CssClass="btn btn-primary mt-2" />
+                    </div>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+</div>
+
+
+
 
 
              <footer>
