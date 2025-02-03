@@ -58,6 +58,112 @@
         color: #285f59;
     }
 
+
+
+
+    /* Contact Us Section Design */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #285f59;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #285f59;
+    outline: none;
+}
+
+.send-button {
+    background-color: #285f59;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.send-button:hover {
+    background-color: #1e4c43;
+}
+
+/* Additional Styling */
+.contact-section .form-container .form-group input,
+.contact-section .form-container .form-group textarea {
+    transition: border-color 0.3s ease;
+}
+
+.contact-section .form-container .form-group input:focus,
+.contact-section .form-container .form-group textarea:focus {
+    border-color: #285f59;
+}
+
+@media (max-width: 767px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .send-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+
 /*------- Footer Section Start -----------*/
 footer {
     color: #caced1 !important;
@@ -157,7 +263,7 @@ footer {
                     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#" style="width: 5%; padding: 0;"><img src="Images\logo.png" width="100%"></a>
+            <a class="navbar-brand" href="#" style="width: 5%; padding: 0;"><img src="../SARA/Images/logo.png" width=100% /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -191,7 +297,7 @@ footer {
                             <div class="card shadow-lg p-4">
                                 <div class="text-center">
 
-                                    <asp:Image ID="Image1" runat="server" ImageUrl="Images/logo.png" AlternateText="My Image" Width="300px" />
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="../SARA/Images/logo.png" AlternateText="My Image" Width="300px" />
                                 </div>
         <!-- Contact Us Section -->
         <section class="contact-section">
@@ -262,11 +368,12 @@ footer {
                 </div>
             </div>
         </div>
+                   
              <footer>
         <div class="justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
             <div class="col-12">
                  <div class="row row-2">
-                     <div class="col-sm-3 text-md-center"><img src="Images\logo.png" width="30%"></div>
+                     <div class="col-sm-3 text-md-center"><img src="../SARA/Images/logo.png" width="30%"></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Home</a></li><li class="nav-item"><a class="nav-link" href="#">Services</a></li></ul></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Contact Us</a></li><li class="nav-item"><a class="nav-link" href="#">About Us</a></li><li class="nav-item" ><a class="nav-link" href="#">Location</a></li></ul></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 ">Have Any Question?</li><li>

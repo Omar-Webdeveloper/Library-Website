@@ -58,6 +58,160 @@
         color: #285f59;
     }
 
+
+
+    /* Global Styles */
+*:not(i) {
+    font-family: 'Montserrat', serif !important;
+}
+
+/* Profile Container */
+.profile-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Heading */
+.profile-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Form Input Fields */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #285f59;
+    box-shadow: 0 0 5px rgba(40, 95, 89, 0.5);
+}
+
+/* Profile Image Section */
+.form-group img {
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.form-group img:hover {
+    transform: scale(1.1);
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #285f59;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1b4536;
+}
+
+.btn-secondary {
+    background-color: #f0ad4e;
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #d39e00;
+}
+
+/* File Upload Button */
+.form-control-file {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.form-control-file:hover {
+    background-color: #e9ecef;
+}
+
+/* Footer Section */
+/*footer {
+    background-color: #285f59;
+    color: #caced1 !important;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer .nav-link {
+    color: #caced1;
+    transition: color 0.3s ease;
+}
+
+footer .nav-link:hover {
+    color: #cd7507;
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #caced1;
+}
+
+footer i:hover {
+    color: #cd7507;
+}*/
+
+/* Responsive Design */
+/*@media (max-width: 576px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .col-sm-3 {
+        margin-bottom: 20px;
+    }
+}*/
+
+
+
+
+
+
 /*------- Footer Section Start -----------*/
 footer {
     color: #caced1 !important;
@@ -93,10 +247,10 @@ footer {
         position: relative;
         padding-bottom: 5px;
         transition: color 0.3s ease-in-out;
-        margin-left: 40px;
+        margin-left: 40px;*/
         /* color: #CD7507 ; */
         /* font-weight: 600; */
-        width: fit-content;
+        /*width: fit-content;
     }
 
         footer .nav-link::after {
@@ -157,7 +311,7 @@ footer {
                     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#" style="width: 5%; padding: 0;"><img src="Images\logo.png" width="100%"></a>
+            <a class="navbar-brand" href="#" style="width: 5%; padding: 0;"><img src="../SARA/Images/logo.png" width="100%"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -183,21 +337,7 @@ footer {
     <!--Navbar End-->
         <div>
             <div class="container my-5">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <asp:Button class="nav-link active" ID="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Profile</asp:Button>
-                    </li>
-                   
-                    <li class="nav-item" role="presentation">
-                        <asp:Button class="nav-link active" ID="home-tab2" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Edit Profile</asp:Button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <asp:Button class="nav-link" ID="bookTab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Book Reservations</asp:Button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <asp:Button class="nav-link" ID="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Room Reservations</asp:Button>
-                    </li>
-                </ul>
+               
 
                 <div class="tab-content mt-3" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -205,7 +345,7 @@ footer {
                             <div class="card shadow-lg p-4">
                                 <div class="text-center">
 
-                                    <asp:Image ID="Image1" runat="server" ImageUrl="Images/logo.png" AlternateText="My Image" Width="300px" />
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="../SARA/Images/logo.png" AlternateText="My Image" Width="300px" />
                                 </div>
 
 
@@ -303,7 +443,7 @@ footer {
         <div class="justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
             <div class="col-12">
                  <div class="row row-2">
-                     <div class="col-sm-3 text-md-center"><img src="Images\logo.png" width="30%"></div>
+                     <div class="col-sm-3 text-md-center"><img src="../SARA/Images/logo.png" width="30%"></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Home</a></li><li class="nav-item"><a class="nav-link" href="#">Services</a></li></ul></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Contact Us</a></li><li class="nav-item"><a class="nav-link" href="#">About Us</a></li><li class="nav-item" ><a class="nav-link" href="#">Location</a></li></ul></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 ">Have Any Question?</li><li>

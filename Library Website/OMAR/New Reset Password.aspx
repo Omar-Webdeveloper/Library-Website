@@ -58,6 +58,69 @@
         color: #285f59;
     }
 
+
+
+    
+    /* Form Styles */
+    .card {
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    .card-body {
+        padding: 3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 1rem;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #285f59;
+        box-shadow: 0 0 5px rgba(40, 95, 89, 0.5);
+    }
+
+    .btn-primary {
+        background-color: #285f59;
+        border-color: #285f59;
+        font-size: 1.1rem;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #1e4c42;
+        border-color: #1e4c42;
+    }
+
+
+
+
+
 /*------- Footer Section Start -----------*/
 footer {
     color: #caced1 !important;
@@ -157,7 +220,7 @@ footer {
                     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#" style="width: 5%; padding: 0;"><img src="Images\logo.png" width="100%" /></a>
+            <a class="navbar-brand" href="#" style="width: 5%; padding: 0;"><img src="../SARA/Images/logo.png" width="100%" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -183,17 +246,7 @@ footer {
     <!--Navbar End-->
         <div>
             <div class="container my-5">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <asp:Button class="nav-link active" ID="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Profile</asp:Button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <asp:Button class="nav-link" ID="bookTab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Book Reservations</asp:Button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <asp:Button class="nav-link" ID="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Room Reservations</asp:Button>
-                    </li>
-                </ul>
+               
 
                 <div class="tab-content mt-3" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -201,7 +254,7 @@ footer {
                             <div class="card shadow-lg p-4">
                                 <div class="text-center">
 
-                                    <asp:Image ID="Image1" runat="server" ImageUrl="Images/logo.png" AlternateText="My Image" Width="300px" />
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="../SARA/Images/logo.png" AlternateText="My Image" Width="300px" />
                                 </div>
                                 <div class="card-body">
                                     
@@ -282,7 +335,7 @@ footer {
         <div class="justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
             <div class="col-12">
                  <div class="row row-2">
-                     <div class="col-sm-3 text-md-center"><img src="Images\logo.png" width="30%" /></div>
+                     <div class="col-sm-3 text-md-center"><img src="../SARA/Images/logo.png" width="30%" /></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Home</a></li><li class="nav-item"><a class="nav-link" href="#">Services</a></li></ul></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 nav-item"><a class="nav-link" href="#">Contact Us</a></li><li class="nav-item"><a class="nav-link" href="#">About Us</a></li><li class="nav-item" ><a class="nav-link" href="#">Location</a></li></ul></div>
                      <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0 ">Have Any Question?</li><li>
